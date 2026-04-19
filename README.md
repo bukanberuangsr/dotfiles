@@ -9,7 +9,5 @@ Skema warna sistem berubah sesuai wallpaper yang digunakan menggunakan matugen.
 
 ## Credits
 
-- [Matugen themes](github.com/corecathx/matugen-themes-zed/)
 - [Niri](https://github.com/YaLTeR/niri)
-- [Quickshell](https://quickshell.org/)
 - [DankMaterialShell](https://danklinux.com/)
