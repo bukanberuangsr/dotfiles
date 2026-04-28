@@ -3,9 +3,12 @@ binds {
     // Mod+D repeat=false { toggle-overview; }
     Mod+Tab repeat=false { toggle-overview; }
     Mod+Shift+Slash { show-hotkey-overlay; }
+    Ctrl+Shift+Escape { quit; }
 
     // === Application Launchers ===
-    Mod+A hotkey-overlay-title="AI" { spawn "dms" "ipc" "call" "plugins" "toggle" "aiAssistant"; }
+    Alt+Space { spawn "fuzzel"; }
+    Mod+E hotkey-overlay-title="Open File Manager" { spawn "dolphin"; }
+    Mod+B hotkey-overlay-title="Open Browser" { spawn "firefox"; }
     Mod+T hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
     Mod+D hotkey-overlay-title="Application Launcher" {
         spawn "dms" "ipc" "call" "spotlight" "toggle";
@@ -25,8 +28,8 @@ binds {
         spawn "dms" "ipc" "call" "dankdash" "wallpaper";
     }
     Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
-    Mod+Shift+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
-    Mod+Shift+C hotkey-overlay-title="Calculator" { spawn "dms" "ipc" "call" "spotlight" "openQuery" "=";}
+    Mod+Shift+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle";}
+
     // === Security ===
     Mod+Alt+L hotkey-overlay-title="Lock Screen" {
         spawn "dms" "ipc" "call" "lock" "lock";
@@ -204,7 +207,7 @@ binds {
     Print { screenshot; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
-    Mod+S { screenshot; }
+    Mod+S { screenshot-screen; }
     // === System Controls ===
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Mod+Shift+P { power-off-monitors; }
